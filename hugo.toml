@@ -1,6 +1,6 @@
 baseURL = 'https://kal-subram.github.io/blogs/'
 locale = 'en-us'
-title = "The Konfused Blog"
+title = "Product Build Notes"
 theme = 'PaperMod'
 
 [params]
