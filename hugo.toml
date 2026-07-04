@@ -1,0 +1,27 @@
+baseURL = 'https://kal-subram.github.io/blogs/'
+locale = 'en-us'
+title = "The Konfused Blog"
+theme = 'PaperMod'
+
+[params]
+  env = 'production'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 10
+
+[[menu.main]]
+  name = 'Posts'
+  url = '/posts/'
+  weight = 20
+
+[markup.highlight]
+  noClasses = false
