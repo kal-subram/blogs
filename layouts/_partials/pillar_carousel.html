@@ -12,12 +12,10 @@
     <div class="pillar-track" id="pillar-track" tabindex="0" role="region" aria-label="Scrollable list of six pillars">
       {{- range $i, $slug := $slugs }}
       {{- with site.GetPage (printf "/categories/%s" $slug) }}
-      {{- $count := len (where site.RegularPages "Params.categories" "intersect" (slice .Title)) }}
       <a class="pillar-slide" href="{{ .Permalink }}">
         <span class="pillar-num">{{ printf "%02d" (add $i 1) }}</span>
         <h3 class="pillar-title">{{ .Title }}</h3>
         <p class="pillar-desc">{{ .Description }}</p>
-        <span class="pillar-count">{{ if eq $count 1 }}1 post{{ else }}{{ $count }} posts{{ end }}</span>
       </a>
       {{- end }}
       {{- end }}
