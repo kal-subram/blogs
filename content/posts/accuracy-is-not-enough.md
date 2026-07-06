@@ -1,5 +1,5 @@
 +++
-date = '2026-07-05T17:48:14-07:00'
+date = '2024-01-25T10:40:00-08:00'
 draft = false
 title = 'Accuracy Is Not Enough'
 summary = 'False positives are loud and visible. False negatives are quiet and only show up later. Chasing a higher accuracy number is not the same as building a system you can trust.'

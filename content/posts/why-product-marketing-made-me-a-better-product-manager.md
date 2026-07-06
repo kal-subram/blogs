@@ -1,5 +1,5 @@
 +++
-date = '2026-07-05T18:30:00-07:00'
+date = '2016-11-03T09:20:00-07:00'
 draft = false
 title = 'Why Product Marketing Made Me a Better Product Manager'
 summary = 'Product marketing is not the polite clean-up crew that shows up after the real product work is done. It is strategy made public, and it made me a better PM.'

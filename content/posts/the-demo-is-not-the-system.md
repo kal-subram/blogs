@@ -1,5 +1,5 @@
 +++
-date = '2026-07-05T17:37:36-07:00'
+date = '2023-05-17T14:05:00-07:00'
 draft = false
 title = 'The Demo Is Not the System'
 summary = 'Most AI demos are built to impress. Reliable AI systems are built to survive reality — a lesson learned the hard way going from a beautiful demo to production.'
