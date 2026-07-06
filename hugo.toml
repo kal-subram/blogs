@@ -14,9 +14,9 @@ theme = 'PaperMod'
   ShowToc = true
 
 [params.homeInfoParams]
-  Title = "Notes from building AI systems that survive production"
+  Title = "Notes on building AI products"
   Content = """
-Most AI demos are built to impress. I write about what it actually takes to build, ship, and lead AI products that hold up once the applause stops — across six things I keep coming back to:
+I have spent a good part of my career building AI products, most of it in places where getting it wrong actually costs something. This is where I put down what I have learned along the way, mostly around six things I keep coming back to:
 """
 
 [[menu.main]]
