@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">The Demo Is Not the System</title>
+  <desc id="desc">A clean, single-path diagram labeled Demo next to a branching, messier diagram labeled Production, illustrating that production systems must handle far more complexity than a demo.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2b3a"/>
+      <stop offset="100%" stop-color="#111a24"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8fa5bd"/>
+    </marker>
+    <marker id="arrowWarn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e0a458"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <line x1="600" y1="60" x2="600" y2="570" stroke="#33465c" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <text x="180" y="90" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#8fa5bd">DEMO</text>
+
+  <circle cx="120" cy="330" r="18" fill="#2b3d51" stroke="#8fa5bd" stroke-width="2"/>
+  <text x="120" y="336" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#cdd9e6">in</text>
+
+  <line x1="140" y1="330" x2="230" y2="330" stroke="#8fa5bd" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="235" y="295" width="150" height="70" rx="10" fill="#26374a" stroke="#8fa5bd" stroke-width="2"/>
+  <text x="310" y="336" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#e8eef5">Model</text>
+
+  <line x1="390" y1="330" x2="470" y2="330" stroke="#8fa5bd" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <circle cx="510" cy="330" r="22" fill="#2b3d51" stroke="#69c48a" stroke-width="2.5"/>
+  <path d="M500,330 l7,8 l14,-16" fill="none" stroke="#69c48a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="180" y="560" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6d84a0">clean input, one path, impressive output</text>
+
+  <text x="1020" y="90" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="2" fill="#e0a458">PRODUCTION</text>
+
+  <circle cx="650" cy="220" r="14" fill="#2b3d51" stroke="#e0a458" stroke-width="2"/>
+  <circle cx="650" cy="330" r="14" fill="#2b3d51" stroke="#e0a458" stroke-width="2"/>
+  <circle cx="650" cy="440" r="14" fill="#2b3d51" stroke="#e0a458" stroke-width="2"/>
+  <text x="650" y="200" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#a9b8c9">clean</text>
+  <text x="650" y="360" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#a9b8c9">stale</text>
+  <text x="650" y="470" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#a9b8c9">missing</text>
+
+  <line x1="664" y1="220" x2="760" y2="315" stroke="#e0a458" stroke-width="2" marker-end="url(#arrowWarn)"/>
+  <line x1="664" y1="330" x2="760" y2="330" stroke="#e0a458" stroke-width="2" marker-end="url(#arrowWarn)"/>
+  <line x1="664" y1="440" x2="760" y2="345" stroke="#e0a458" stroke-width="2" marker-end="url(#arrowWarn)"/>
+
+  <rect x="765" y="280" width="150" height="100" rx="10" fill="#3a2e22" stroke="#e0a458" stroke-width="2"/>
+  <text x="840" y="322" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#f3e4cf">Decision</text>
+  <text x="840" y="344" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#f3e4cf">System</text>
+
+  <line x1="920" y1="305" x2="990" y2="255" stroke="#e0a458" stroke-width="2" marker-end="url(#arrowWarn)"/>
+  <line x1="920" y1="330" x2="990" y2="330" stroke="#e0a458" stroke-width="2" marker-end="url(#arrowWarn)"/>
+  <line x1="920" y1="355" x2="990" y2="405" stroke="#e0a458" stroke-width="2" marker-end="url(#arrowWarn)"/>
+
+  <circle cx="1015" cy="255" r="18" fill="#2b3d51" stroke="#69c48a" stroke-width="2.5"/>
+  <path d="M1006,255 l6,7 l12,-14" fill="none" stroke="#69c48a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="1015" cy="330" r="18" fill="#2b3d51" stroke="#e0a458" stroke-width="2.5"/>
+  <text x="1015" y="336" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#e0a458">?</text>
+
+  <circle cx="1015" cy="405" r="18" fill="#2b3d51" stroke="#d9736c" stroke-width="2.5"/>
+  <line x1="1008" y1="398" x2="1022" y2="412" stroke="#d9736c" stroke-width="2.8" stroke-linecap="round"/>
+  <line x1="1022" y1="398" x2="1008" y2="412" stroke="#d9736c" stroke-width="2.8" stroke-linecap="round"/>
+
+  <text x="1020" y="560" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#a9825a">messy input, many paths, uncertain outcomes</text>
+</svg>
