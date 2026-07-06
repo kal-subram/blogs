@@ -14,9 +14,9 @@ theme = 'PaperMod'
   ShowToc = true
 
 [params.homeInfoParams]
-  Title = "Notes on product leadership"
+  Title = "Where strategy meets production"
   Content = """
-Twenty years now in product management and leadership, with AI taking up a good chunk of the last few. This is where I put down what I have picked up along the way, mostly around six things I keep coming back to:
+Notes on reliability, adoption, and what happens after products ship.
 """
 
 [[menu.main]]
