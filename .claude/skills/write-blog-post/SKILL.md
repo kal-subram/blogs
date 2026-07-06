@@ -1,0 +1,113 @@
+---
+name: write-blog-post
+description: Add a new post to this Hugo blog (Product Build Notes) - creates the content file, an original SVG cover image matching the site's visual style, categorizes it into one of the six pillars, previews locally, then commits/pushes and verifies it's live on both GitHub Pages and Cloudflare Workers. Use whenever the user pastes a draft post or asks to write/add/publish a blog post.
+---
+
+# Write a blog post
+
+This repo is a Hugo static blog ("Product Build Notes") dual-published to:
+- GitHub Pages: https://kal-subram.github.io/blogs/
+- Cloudflare Workers: https://the-reliable-product.product-builder-hub.workers.dev
+
+Both rebuild automatically from `git push` to `main`. Follow these steps for every new post.
+
+## 1. Create the content file
+
+```bash
+hugo new content posts/<kebab-case-slug>.md
+```
+
+## 2. Fill in front matter
+
+```toml
++++
+date = '<leave as generated>'
+draft = false
+title = '<Post Title, Title Case>'
+summary = '<1-2 sentence hook capturing the core argument, no clickbait>'
+categories = ['<exactly one of the six pillars below>']
+
+[cover]
+  image = 'images/posts/<slug>-cover.svg'
+  alt = '<plain-language description of the cover diagram>'
++++
+
+<post body, preserve the author's voice and wording almost exactly - only
+light copyedits (quote-curling, obvious typos). Do not paraphrase or
+rewrite their prose.>
+```
+
+The six pillars (use the exact string as it appears here):
+- `AI Systems After the Demo`
+- `Evals, Metrics, and Decision Quality`
+- `Safety, Compliance, and Human Review`
+- `Reliability, Scale, and Infrastructure`
+- `Product Marketing, GTM, and Adoption`
+- `Product Leadership and Career Range`
+
+Pick whichever pillar the post's core argument fits best. Add `tags = [...]` for secondary cross-cutting themes if useful (optional).
+
+## 3. Create an original SVG cover image
+
+Never use stock photos or downloaded images for covers - always design an original, abstract SVG diagram that visualizes the post's central metaphor or contrast (e.g. demo-vs-production, iceberg for visible-vs-hidden, a straight line vs. a loop). This avoids any licensing question entirely.
+
+Save to `static/images/posts/<slug>-cover.svg`, viewBox `0 0 1200 630`, and match the established visual system:
+
+- Background: dark gradient, `#1d2b3a` to `#111a24`
+- Font: `Helvetica, Arial, sans-serif`, headers in caps with `letter-spacing`
+- Accent palette: blue `#8fa5bd` (calm/clean), amber `#e0a458` (messy/warning), green `#69c48a` (success), red `#d9736c` (failure/risk)
+- Include a `<title>` and `<desc>` for accessibility
+
+Look at `static/images/posts/the-demo-is-not-the-system-cover.svg` or `accuracy-is-not-enough-cover.svg` as reference examples.
+
+## 4. Build and preview locally before pushing
+
+```bash
+hugo --gc --minify
+```
+
+Check the page count increased as expected, then spin up a live preview and actually look at it (don't skip this):
+
+```bash
+hugo server --buildDrafts --port 1313 &
+```
+
+Navigate to `http://localhost:1313/blogs/posts/<slug>/` via the claude-in-chrome tools and screenshot it. Check: cover image renders correctly, category badge shows in the post meta line, no obvious layout issues. Kill the server when done (`pkill -f "hugo server"`).
+
+## 5. Commit and push
+
+```bash
+git add content/posts/<slug>.md static/images/posts/<slug>-cover.svg
+git commit -m "Add post: <Title>"
+git push
+```
+
+## 6. Verify the deploy
+
+Watch the GitHub Actions run:
+
+```bash
+gh run list --repo kal-subram/blogs --limit 1 --json databaseId -q '.[0].databaseId'
+gh run watch <id> --repo kal-subram/blogs --exit-status
+```
+
+**Known quirk**: the GitHub Pages deploy step intermittently fails with "Deployment failed, try again later" - this is a transient Pages issue, not a real failure. If it happens, just retry:
+
+```bash
+gh run rerun <id> --repo kal-subram/blogs --failed
+```
+
+Cloudflare deploys on its own separate pipeline (triggered by the same push, via its Git integration) - no need to watch it manually, just check it after a short wait.
+
+Finally, curl both live URLs to confirm the new post is up:
+
+```bash
+curl -s -o /dev/null -w "%{http_code}\n" https://kal-subram.github.io/blogs/posts/<slug>/
+curl -s -o /dev/null -w "%{http_code}\n" https://the-reliable-product.product-builder-hub.workers.dev/posts/<slug>/
+```
+
+## Notes
+
+- Don't touch `hello-world.md` (already removed) or unrelated files.
+- If the user has already drafted a post directly in the filesystem themselves (untracked), don't assume you should edit or restructure it - just ask before touching it.
+- Keep the tone and wording as the user wrote it. Your job is scaffolding (front matter, cover art, categorization, publishing), not rewriting their voice.

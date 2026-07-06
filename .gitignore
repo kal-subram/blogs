@@ -1,5 +1,6 @@
 public/
 resources/_gen/
 .hugo_build.lock
-.claude/
+.claude/*
+!.claude/skills/
 .DS_Store
