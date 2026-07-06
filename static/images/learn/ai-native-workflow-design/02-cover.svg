@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">What Internal Teams Told Me About the Old Process</title>
+  <desc id="desc">Three separate internal research methods, shadowing sessions, one on one interviews, and a survey, all feeding into one shared set of themes.</desc>
+
+  <defs>
+    <linearGradient id="bgL2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2b3a"/>
+      <stop offset="100%" stop-color="#111a24"/>
+    </linearGradient>
+    <marker id="arrowL2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8fa5bd"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgL2)"/>
+
+  <text x="600" y="75" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="1.5" fill="#8fa5bd">INTERNAL RESEARCH</text>
+
+  <rect x="120" y="150" width="220" height="80" rx="10" fill="#26374a" stroke="#8fa5bd" stroke-width="2"/>
+  <text x="230" y="185" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#e8eef5">Shadowing</text>
+  <text x="230" y="207" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#a9b8c9">reviewers</text>
+
+  <rect x="120" y="275" width="220" height="80" rx="10" fill="#26374a" stroke="#8fa5bd" stroke-width="2"/>
+  <text x="230" y="310" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#e8eef5">1:1 interviews</text>
+  <text x="230" y="332" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#a9b8c9">leads &amp; policy owners</text>
+
+  <rect x="120" y="400" width="220" height="80" rx="10" fill="#26374a" stroke="#8fa5bd" stroke-width="2"/>
+  <text x="230" y="435" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#e8eef5">Survey</text>
+  <text x="230" y="457" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#a9b8c9">broader signal</text>
+
+  <line x1="340" y1="190" x2="470" y2="300" stroke="#8fa5bd" stroke-width="2" marker-end="url(#arrowL2)"/>
+  <line x1="340" y1="315" x2="470" y2="315" stroke="#8fa5bd" stroke-width="2" marker-end="url(#arrowL2)"/>
+  <line x1="340" y1="440" x2="470" y2="330" stroke="#8fa5bd" stroke-width="2" marker-end="url(#arrowL2)"/>
+
+  <rect x="480" y="255" width="240" height="120" rx="10" fill="#26374a" stroke="#69c48a" stroke-width="2.5"/>
+  <text x="600" y="305" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#e8eef5">Shared themes</text>
+  <text x="600" y="330" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#a9b8c9">consistency over speed</text>
+  <text x="600" y="350" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#a9b8c9">route the hard cases well</text>
+
+  <line x1="720" y1="315" x2="800" y2="315" stroke="#69c48a" stroke-width="2.5" marker-end="url(#arrowL2)"/>
+
+  <rect x="810" y="255" width="270" height="120" rx="10" fill="#3a2e22" stroke="#e0a458" stroke-width="2.5"/>
+  <text x="945" y="300" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#f3e4cf">What I assumed</text>
+  <text x="945" y="325" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c79a68">speed was the opportunity</text>
+  <text x="945" y="345" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c79a68">turned out to be wrong</text>
+
+  <text x="600" y="555" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6d84a0">three ways of listening, one honest correction</text>
+</svg>

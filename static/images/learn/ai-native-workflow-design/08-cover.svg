@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">Designing the AI Workflow UI, End to End</title>
+  <desc id="desc">A complete end to end flow of screens from intake through triage, review, decision, and a clearer notification back to the customer.</desc>
+
+  <defs>
+    <linearGradient id="bgL8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2b3a"/>
+      <stop offset="100%" stop-color="#111a24"/>
+    </linearGradient>
+    <marker id="arrowL8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#69c48a"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgL8)"/>
+
+  <text x="600" y="70" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.3" fill="#69c48a">END TO END</text>
+
+  <g font-family="Helvetica, Arial, sans-serif">
+    <circle cx="110" cy="300" r="26" fill="#26374a" stroke="#8fa5bd" stroke-width="2.2"/>
+    <text x="110" y="345" text-anchor="middle" font-size="12" fill="#a9b8c9">intake</text>
+
+    <line x1="136" y1="300" x2="204" y2="300" stroke="#69c48a" stroke-width="2.2" marker-end="url(#arrowL8)"/>
+
+    <circle cx="230" cy="300" r="26" fill="#26374a" stroke="#8fa5bd" stroke-width="2.2"/>
+    <text x="230" y="345" text-anchor="middle" font-size="12" fill="#a9b8c9">triage</text>
+
+    <line x1="256" y1="300" x2="324" y2="300" stroke="#69c48a" stroke-width="2.2" marker-end="url(#arrowL8)"/>
+
+    <rect x="330" y="270" width="150" height="60" rx="8" fill="#1e3327" stroke="#69c48a" stroke-width="2"/>
+    <text x="405" y="292" text-anchor="middle" font-size="12" fill="#cfe9d9">fast path</text>
+    <text x="405" y="310" text-anchor="middle" font-size="11" fill="#9fc9ac">auto + recheck</text>
+
+    <rect x="330" y="345" width="150" height="60" rx="8" fill="#3a2e22" stroke="#e0a458" stroke-width="2"/>
+    <text x="405" y="367" text-anchor="middle" font-size="12" fill="#f3e4cf">reviewer path</text>
+    <text x="405" y="385" text-anchor="middle" font-size="11" fill="#c79a68">factors first</text>
+
+    <line x1="230" y1="322" x2="330" y2="375" stroke="#e0a458" stroke-width="2" marker-end="url(#arrowL8)"/>
+    <line x1="256" y1="290" x2="330" y2="290" stroke="#69c48a" stroke-width="2" marker-end="url(#arrowL8)"/>
+
+    <line x1="480" y1="300" x2="560" y2="300" stroke="#69c48a" stroke-width="2.2" marker-end="url(#arrowL8)"/>
+    <line x1="480" y1="375" x2="560" y2="330" stroke="#e0a458" stroke-width="2.2" marker-end="url(#arrowL8)"/>
+
+    <rect x="565" y="270" width="150" height="90" rx="8" fill="#26374a" stroke="#8fa5bd" stroke-width="2"/>
+    <text x="640" y="310" text-anchor="middle" font-size="13" fill="#e8eef5">Decision</text>
+    <text x="640" y="330" text-anchor="middle" font-size="11" fill="#a9b8c9">close or escalate</text>
+
+    <line x1="715" y1="315" x2="785" y2="315" stroke="#69c48a" stroke-width="2.2" marker-end="url(#arrowL8)"/>
+
+    <rect x="790" y="255" width="180" height="120" rx="8" fill="#1e3327" stroke="#69c48a" stroke-width="2"/>
+    <text x="880" y="285" text-anchor="middle" font-size="13" fill="#cfe9d9">Notify seller</text>
+    <text x="880" y="303" text-anchor="middle" font-size="11" fill="#9fc9ac">plain language,</text>
+    <text x="880" y="319" text-anchor="middle" font-size="11" fill="#9fc9ac">direct appeal link</text>
+    <text x="880" y="345" text-anchor="middle" font-size="13" fill="#cfe9d9">Notify customer</text>
+    <text x="880" y="363" text-anchor="middle" font-size="11" fill="#9fc9ac">"it was looked at"</text>
+  </g>
+
+  <text x="600" y="555" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6d84a0">most of what changed here was information, not the model</text>
+</svg>

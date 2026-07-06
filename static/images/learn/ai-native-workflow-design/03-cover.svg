@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">What External Customers Actually Said</title>
+  <desc id="desc">A seller and a customer on one side of the process, internal reviewers on the other side, with a foggy gap of unclear communication between them.</desc>
+
+  <defs>
+    <linearGradient id="bgL3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2b3a"/>
+      <stop offset="100%" stop-color="#111a24"/>
+    </linearGradient>
+    <radialGradient id="fogL3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a4b5e" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3a4b5e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgL3)"/>
+
+  <text x="290" y="80" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5" fill="#e0a458">SELLER &amp; CUSTOMER</text>
+  <text x="910" y="80" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5" fill="#8fa5bd">REVIEW TEAM</text>
+
+  <g>
+    <circle cx="220" cy="260" r="34" fill="#3a2e22" stroke="#e0a458" stroke-width="2.5"/>
+    <circle cx="220" cy="248" r="10" fill="none" stroke="#f3e4cf" stroke-width="2.2"/>
+    <path d="M 204 278 Q 220 258 236 278" fill="none" stroke="#f3e4cf" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="220" y="315" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c79a68">seller</text>
+  </g>
+
+  <g>
+    <circle cx="220" cy="400" r="34" fill="#3a2e22" stroke="#e0a458" stroke-width="2.5"/>
+    <circle cx="220" cy="388" r="10" fill="none" stroke="#f3e4cf" stroke-width="2.2"/>
+    <path d="M 204 418 Q 220 398 236 418" fill="none" stroke="#f3e4cf" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="220" y="455" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c79a68">customer</text>
+  </g>
+
+  <text x="220" y="500" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#a9825a">"why was this removed?"</text>
+  <text x="220" y="522" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#a9825a">"did my report even matter?"</text>
+
+  <ellipse cx="600" cy="330" rx="220" ry="140" fill="url(#fogL3)"/>
+  <text x="600" y="325" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#8497ab">unclear</text>
+  <text x="600" y="347" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#8497ab">communication</text>
+
+  <g>
+    <circle cx="980" cy="260" r="34" fill="#26374a" stroke="#8fa5bd" stroke-width="2.5"/>
+    <circle cx="980" cy="248" r="10" fill="none" stroke="#e8eef5" stroke-width="2.2"/>
+    <path d="M 964 278 Q 980 258 996 278" fill="none" stroke="#e8eef5" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="980" y="315" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#a9b8c9">reviewer</text>
+  </g>
+
+  <g>
+    <circle cx="980" cy="400" r="34" fill="#26374a" stroke="#8fa5bd" stroke-width="2.5"/>
+    <circle cx="980" cy="388" r="10" fill="none" stroke="#e8eef5" stroke-width="2.2"/>
+    <path d="M 964 418 Q 980 398 996 418" fill="none" stroke="#e8eef5" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="980" y="455" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#a9b8c9">policy owner</text>
+  </g>
+
+  <text x="600" y="555" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6d84a0">consistent on the inside does not mean clear on the outside</text>
+</svg>

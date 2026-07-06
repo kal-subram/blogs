@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">Bringing Cloudscape Into the Workflow Design</title>
+  <desc id="desc">A Figma design file and a React codebase connected by shared Cloudscape components, closing the usual gap between design and engineering.</desc>
+
+  <defs>
+    <linearGradient id="bgL9" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2b3a"/>
+      <stop offset="100%" stop-color="#111a24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgL9)"/>
+
+  <text x="600" y="70" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.3" fill="#69c48a">DESIGN AND CODE, SAME SOURCE</text>
+
+  <text x="230" y="115" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#8fa5bd">FIGMA</text>
+  <rect x="110" y="130" width="240" height="300" rx="8" fill="#26374a" stroke="#8fa5bd" stroke-width="2"/>
+  <rect x="135" y="155" width="190" height="40" rx="5" fill="none" stroke="#a9b8c9" stroke-width="1.5"/>
+  <text x="230" y="180" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#a9b8c9">StatusIndicator</text>
+  <rect x="135" y="210" width="190" height="40" rx="5" fill="none" stroke="#a9b8c9" stroke-width="1.5"/>
+  <text x="230" y="235" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#a9b8c9">Table</text>
+  <rect x="135" y="265" width="190" height="40" rx="5" fill="none" stroke="#a9b8c9" stroke-width="1.5"/>
+  <text x="230" y="290" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#a9b8c9">Container</text>
+  <rect x="135" y="320" width="190" height="40" rx="5" fill="none" stroke="#a9b8c9" stroke-width="1.5"/>
+  <text x="230" y="345" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#a9b8c9">Flashbar</text>
+
+  <text x="970" y="115" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#69c48a">REACT</text>
+  <rect x="850" y="130" width="240" height="300" rx="8" fill="#16241f" stroke="#69c48a" stroke-width="2"/>
+  <text x="875" y="160" font-family="Courier New, monospace" font-size="12" fill="#9fc9ac">&lt;StatusIndicator</text>
+  <text x="875" y="178" font-family="Courier New, monospace" font-size="12" fill="#9fc9ac">  type="success" /&gt;</text>
+  <text x="875" y="215" font-family="Courier New, monospace" font-size="12" fill="#9fc9ac">&lt;Table</text>
+  <text x="875" y="233" font-family="Courier New, monospace" font-size="12" fill="#9fc9ac">  items={cases} /&gt;</text>
+  <text x="875" y="270" font-family="Courier New, monospace" font-size="12" fill="#9fc9ac">&lt;Container&gt;</text>
+  <text x="875" y="325" font-family="Courier New, monospace" font-size="12" fill="#9fc9ac">&lt;Flashbar</text>
+  <text x="875" y="343" font-family="Courier New, monospace" font-size="12" fill="#9fc9ac">  items={msgs} /&gt;</text>
+
+  <line x1="360" y1="175" x2="840" y2="165" stroke="#69c48a" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="360" y1="230" x2="840" y2="222" stroke="#69c48a" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="360" y1="285" x2="840" y2="277" stroke="#69c48a" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="360" y1="340" x2="840" y2="332" stroke="#69c48a" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <text x="600" y="555" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6d84a0">same component, viewed from two different tools</text>
+</svg>

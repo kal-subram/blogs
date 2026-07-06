@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">Moving the Workflow Into Figma</title>
+  <desc id="desc">A rough wireframe box on the left transforming into a detailed, styled Figma screen on the right, with real hierarchy and states.</desc>
+
+  <defs>
+    <linearGradient id="bgL7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2b3a"/>
+      <stop offset="100%" stop-color="#111a24"/>
+    </linearGradient>
+    <marker id="arrowL7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8fa5bd"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgL7)"/>
+
+  <text x="230" y="80" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.3" fill="#8fa5bd">VISILY</text>
+  <text x="940" y="80" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.3" fill="#69c48a">FIGMA</text>
+
+  <rect x="100" y="130" width="260" height="360" rx="6" fill="#26374a" stroke="#8fa5bd" stroke-width="2" stroke-dasharray="6 5"/>
+  <rect x="125" y="155" width="210" height="20" rx="2" fill="none" stroke="#a9b8c9" stroke-width="1.5"/>
+  <rect x="125" y="190" width="210" height="90" rx="2" fill="none" stroke="#a9b8c9" stroke-width="1.5"/>
+  <rect x="125" y="295" width="95" height="30" rx="3" fill="none" stroke="#a9b8c9" stroke-width="1.5"/>
+  <rect x="240" y="295" width="95" height="30" rx="3" fill="none" stroke="#a9b8c9" stroke-width="1.5"/>
+
+  <line x1="380" y1="310" x2="470" y2="310" stroke="#8fa5bd" stroke-width="2.5" marker-end="url(#arrowL7)"/>
+
+  <rect x="490" y="130" width="620" height="360" rx="8" fill="#16241f" stroke="#69c48a" stroke-width="2.5"/>
+
+  <rect x="515" y="152" width="570" height="30" rx="4" fill="#1e3327"/>
+  <text x="525" y="172" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#cfe9d9">Case 40218</text>
+
+  <rect x="515" y="196" width="360" height="130" rx="6" fill="#1e3327" stroke="#69c48a" stroke-width="1.5"/>
+  <text x="530" y="218" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#9fc9ac">why this case needs review</text>
+  <rect x="530" y="230" width="330" height="14" rx="3" fill="#294435"/>
+  <rect x="530" y="252" width="290" height="14" rx="3" fill="#294435"/>
+  <rect x="530" y="274" width="310" height="14" rx="3" fill="#294435"/>
+  <rect x="530" y="296" width="230" height="14" rx="3" fill="#294435"/>
+
+  <rect x="890" y="196" width="195" height="130" rx="6" fill="#1e3327" stroke="#69c48a" stroke-width="1.5"/>
+  <text x="905" y="218" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#9fc9ac">raw case detail</text>
+  <rect x="905" y="234" width="165" height="10" rx="2" fill="#294435"/>
+  <rect x="905" y="252" width="165" height="10" rx="2" fill="#294435"/>
+  <rect x="905" y="270" width="165" height="10" rx="2" fill="#294435"/>
+  <rect x="905" y="288" width="120" height="10" rx="2" fill="#294435"/>
+
+  <rect x="515" y="345" width="130" height="36" rx="5" fill="#1e3327" stroke="#69c48a" stroke-width="1.5"/>
+  <text x="580" y="368" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#cfe9d9">Approve</text>
+  <rect x="655" y="345" width="130" height="36" rx="5" fill="#3a2e22" stroke="#e0a458" stroke-width="1.5"/>
+  <text x="720" y="368" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#f3e4cf">Escalate</text>
+
+  <text x="600" y="555" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6d84a0">hierarchy, states, and real component styles arrived here</text>
+</svg>
