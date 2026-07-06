@@ -1,0 +1,33 @@
+{{- $slugs := slice
+    "ai-systems-after-the-demo"
+    "evals-metrics-and-decision-quality"
+    "safety-compliance-and-human-review"
+    "reliability-scale-and-infrastructure"
+    "product-marketing-gtm-and-adoption"
+    "product-leadership-and-career-range"
+}}
+
+<section class="pillar-carousel" aria-label="Blog pillars">
+  <div class="pillar-viewport">
+    <div class="pillar-track" id="pillar-track" tabindex="0" role="region" aria-label="Scrollable list of six pillars">
+      {{- range $i, $slug := $slugs }}
+      {{- with site.GetPage (printf "/categories/%s" $slug) }}
+      {{- $count := len (where site.RegularPages "Params.categories" "intersect" (slice .Title)) }}
+      <a class="pillar-slide" href="{{ .Permalink }}">
+        <span class="pillar-num">{{ printf "%02d" (add $i 1) }}</span>
+        <h3 class="pillar-title">{{ .Title }}</h3>
+        <p class="pillar-desc">{{ .Description }}</p>
+        <span class="pillar-count">{{ if eq $count 1 }}1 post{{ else }}{{ $count }} posts{{ end }}</span>
+      </a>
+      {{- end }}
+      {{- end }}
+    </div>
+    <button class="pillar-nav pillar-prev" type="button" aria-label="Previous pillar">&#8249;</button>
+    <button class="pillar-nav pillar-next" type="button" aria-label="Next pillar">&#8250;</button>
+  </div>
+  <div class="pillar-dots" id="pillar-dots">
+    {{- range $i, $slug := $slugs }}
+    <button class="pillar-dot{{ if eq $i 0 }} active{{ end }}" type="button" data-index="{{ $i }}" aria-label="{{ printf "Go to pillar %d" (add $i 1) }}"></button>
+    {{- end }}
+  </div>
+</section>
