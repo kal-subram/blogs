@@ -47,9 +47,19 @@ The six pillars (use the exact string as it appears here):
 
 Pick whichever pillar the post's core argument fits best. Add `tags = [...]` for secondary cross-cutting themes if useful (optional).
 
-## 3. Create an original SVG cover image
+## 3. Source a cover image
 
-Never use stock photos or downloaded images for covers - always design an original, abstract SVG diagram that visualizes the post's central metaphor or contrast (e.g. demo-vs-production, iceberg for visible-vs-hidden, a straight line vs. a loop). This avoids any licensing question entirely.
+Check for a real photo first. Only fall back to an original SVG diagram if nothing suitable turns up.
+
+**First choice: a free, legally-clear photo.**
+- Search free/permissively-licensed sources for something that genuinely fits the post's topic (Unsplash and Pexels are both free for commercial and non-commercial use, no permission required under their standard licenses - confirm the specific image's license page anyway).
+- Judge fit honestly - a generic stock photo that doesn't actually match the post's argument is worse than no photo. Don't force it.
+- Downloading any file requires the user's explicit go-ahead first: tell them the exact filename, source URL, license, and file size, and wait for confirmation before fetching it. Never download silently.
+- Once approved, save to `static/images/posts/<slug>-cover.<ext>` (jpg/png, whatever the source provides).
+
+**Fallback: original SVG diagram**, if no free photo is a good fit.
+
+Design an original, abstract SVG that visualizes the post's central metaphor or contrast (e.g. demo-vs-production, iceberg for visible-vs-hidden, a straight line vs. a loop). This avoids any licensing question entirely.
 
 Save to `static/images/posts/<slug>-cover.svg`, viewBox `0 0 1200 630`, and match the established visual system:
 
