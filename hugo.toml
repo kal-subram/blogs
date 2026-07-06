@@ -33,7 +33,20 @@ Notes on reliability, adoption, and what happens after products ship.
 [[menu.main]]
   name = 'PM Toolkit'
   url = '/learn/'
+  identifier = 'pmtoolkit'
   weight = 25
+
+[[menu.main]]
+  name = 'PyTorch for PMs'
+  url = '/learn/pytorch-for-pms/'
+  parent = 'pmtoolkit'
+  weight = 1
+
+[[menu.main]]
+  name = 'Designing an AI-Native Workflow'
+  url = '/learn/ai-native-workflow-design/'
+  parent = 'pmtoolkit'
+  weight = 2
 
 [[menu.main]]
   name = 'Categories'
