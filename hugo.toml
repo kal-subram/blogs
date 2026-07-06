@@ -14,9 +14,9 @@ theme = 'PaperMod'
   ShowToc = true
 
 [params.homeInfoParams]
-  Title = "Notes on building AI products"
+  Title = "Notes on product leadership"
   Content = """
-I have spent a good part of my career building AI products, most of it in places where getting it wrong actually costs something. This is where I put down what I have learned along the way, mostly around six things I keep coming back to:
+Twenty years now in product management and leadership, with AI taking up a good chunk of the last few. This is where I put down what I have picked up along the way, mostly around six things I keep coming back to:
 """
 
 [[menu.main]]
