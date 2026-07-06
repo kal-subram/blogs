@@ -47,6 +47,21 @@ The six pillars (use the exact string as it appears here):
 
 Pick whichever pillar the post's core argument fits best. Add `tags = [...]` for secondary cross-cutting themes if useful (optional).
 
+Post titles should be phrased as questions (e.g. "Why Does Accuracy Fall Short?" rather than "Accuracy Is Not Enough").
+
+## Tone and style (when you're drafting or editing content yourself)
+
+This only applies when you're writing or substantially editing the post's words. If the user pastes their own finished draft, don't apply any of this - just scaffold around it as-is (see Notes below).
+
+- Simple, plain language. Nothing that reads like it was written by an AI.
+- No rhetorical questions used as a hook or transition.
+- No "neat contrast" setups (the X-but-Y sentence structure used as a punchy opener).
+- No repeated lesson framing - don't keep restating "that taught me X" / "the lesson here is Y" over and over.
+- No over-explaining - say a thing once, plainly, and move on.
+- No em-dashes, anywhere.
+- No three-tiered statements or questions (avoid tricolon patterns like "X, Y, and Z" used as a rhetorical flourish, or three rhetorical questions in a row).
+- A slight, natural Indian-English tone - not a caricature, just the plain, direct register the author actually writes in.
+
 ## 3. Source a cover image
 
 Check for a real photo first. Only fall back to an original SVG diagram if nothing suitable turns up.
