@@ -9,7 +9,11 @@
     </div>
     {{- partial "pillar_carousel.html" $ }}
     <p class="home-learn-cta">
-        <a class="button" href="{{ "learn/" | relURL }}">PM Learning Series: PyTorch for PMs &rarr;</a>
+        <a class="toolkit-button" href="{{ "learn/pytorch-for-pms/" | relURL }}">
+            <span class="toolkit-icon" aria-hidden="true">&#128293;</span>
+            <span class="toolkit-text">PM Toolkit: PyTorch Learning</span>
+            <span class="toolkit-badge">New</span>
+        </a>
     </p>
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}

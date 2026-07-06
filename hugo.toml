@@ -31,6 +31,11 @@ Notes on reliability, adoption, and what happens after products ship.
   weight = 20
 
 [[menu.main]]
+  name = 'PM Toolkit'
+  url = '/learn/'
+  weight = 25
+
+[[menu.main]]
   name = 'Categories'
   url = '/categories/'
   weight = 30
