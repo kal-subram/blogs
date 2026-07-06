@@ -12,6 +12,7 @@ theme = 'PaperMod'
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = true
+  mainSections = ['posts']
 
 [params.homeInfoParams]
   Title = "Where strategy meets production"

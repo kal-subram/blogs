@@ -8,6 +8,9 @@
         {{ .Content | $.Page.RenderString $opts }}
     </div>
     {{- partial "pillar_carousel.html" $ }}
+    <p class="home-learn-cta">
+        <a class="button" href="{{ "learn/" | relURL }}">PM Learning Series: PyTorch for PMs &rarr;</a>
+    </p>
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
