@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">Human Review Is Not a Fallback</title>
+  <desc id="desc">An AI model box and a human review box connected by a two-way loop, one arrow carrying uncertain cases to review, the other carrying feedback and corrected labels back to the model, illustrating human review as a permanent learning loop rather than a temporary fallback.</desc>
+
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2b3a"/>
+      <stop offset="100%" stop-color="#111a24"/>
+    </linearGradient>
+    <marker id="arrowBlue4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8fa5bd"/>
+    </marker>
+    <marker id="arrowGreen4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#69c48a"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg4)"/>
+
+  <text x="600" y="80" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="2" fill="#e8eef5">A LEARNING LOOP, NOT A FALLBACK</text>
+
+  <path d="M 400 270 C 480 140, 720 140, 800 270" fill="none" stroke="#8fa5bd" stroke-width="3" marker-end="url(#arrowBlue4)"/>
+  <text x="600" y="150" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#a9bccf">flags uncertain cases</text>
+
+  <path d="M 800 370 C 720 500, 480 500, 400 370" fill="none" stroke="#69c48a" stroke-width="3" marker-end="url(#arrowGreen4)"/>
+  <text x="600" y="535" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#8fc9a4">feedback, corrected labels</text>
+
+  <rect x="250" y="270" width="220" height="100" rx="12" fill="#26374a" stroke="#8fa5bd" stroke-width="2.5"/>
+  <text x="360" y="313" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1" fill="#e8eef5">AI MODEL</text>
+  <text x="360" y="338" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#a9bccf">fast, consistent, incomplete</text>
+
+  <rect x="730" y="270" width="220" height="100" rx="12" fill="#1e3a2c" stroke="#69c48a" stroke-width="2.5"/>
+  <text x="840" y="313" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1" fill="#e8eef5">HUMAN REVIEW</text>
+  <text x="840" y="338" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8fc9a4">slower, contextual, adaptive</text>
+
+  <text x="600" y="600" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#8494a6">human judgment where the world is still changing</text>
+</svg>
