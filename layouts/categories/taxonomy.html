@@ -1,0 +1,34 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description | markdownify }}
+    </div>
+    {{- end }}
+</header>
+{{- end }}
+
+{{- $slugs := slice
+    "ai-systems-after-the-demo"
+    "evals-metrics-and-decision-quality"
+    "safety-compliance-and-human-review"
+    "reliability-scale-and-infrastructure"
+    "product-marketing-gtm-and-adoption"
+    "product-leadership-and-career-range"
+}}
+
+<ul class="terms-tags">
+    {{- range $slugs }}
+    {{- with site.GetPage (printf "/categories/%s" .) }}
+    {{- $count := len (where site.RegularPages "Params.categories" "intersect" (slice .Title)) }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title }} <sup><strong><sup>{{ $count }}</sup></strong></sup></a>
+    </li>
+    {{- end }}
+    {{- end }}
+</ul>
+
+{{- end }}{{/* end main */}}

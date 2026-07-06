@@ -13,6 +13,19 @@ theme = 'PaperMod'
   ShowCodeCopyButtons = true
   ShowToc = true
 
+[params.homeInfoParams]
+  Title = "Notes from building AI systems that survive production"
+  Content = """
+Most AI demos are built to impress. I write about what it actually takes to build, ship, and lead AI products that hold up once the applause stops — across six things I keep coming back to:
+
+- [AI Systems After the Demo](/categories/ai-systems-after-the-demo/)
+- [Evals, Metrics, and Decision Quality](/categories/evals-metrics-and-decision-quality/)
+- [Safety, Compliance, and Human Review](/categories/safety-compliance-and-human-review/)
+- [Reliability, Scale, and Infrastructure](/categories/reliability-scale-and-infrastructure/)
+- [Product Marketing, GTM, and Adoption](/categories/product-marketing-gtm-and-adoption/)
+- [Product Leadership and Career Range](/categories/product-leadership-and-career-range/)
+"""
+
 [[menu.main]]
   name = 'Home'
   url = '/'
@@ -22,6 +35,11 @@ theme = 'PaperMod'
   name = 'Posts'
   url = '/posts/'
   weight = 20
+
+[[menu.main]]
+  name = 'Categories'
+  url = '/categories/'
+  weight = 30
 
 [markup.highlight]
   noClasses = false

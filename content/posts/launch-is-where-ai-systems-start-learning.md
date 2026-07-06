@@ -3,6 +3,8 @@ date = '2026-07-05T17:50:33-07:00'
 draft = false
 title = 'Launch Is Where AI Systems Start Learning'
 summary = 'In traditional software, launch proves the system can run. In AI systems, launch begins the process of learning whether the system can be trusted.'
+categories = ['AI Systems After the Demo']
+tags = ['human review', 'post-launch monitoring']
 
 [cover]
   image = 'images/posts/launch-is-where-ai-systems-start-learning-cover.svg'
