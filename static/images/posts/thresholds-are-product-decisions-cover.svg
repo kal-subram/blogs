@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">Thresholds Are Product Decisions</title>
+  <desc id="desc">A horizontal slider running from False Positives on the left to False Negatives on the right, with a threshold marker positioned along the track, illustrating that moving a threshold trades friction for risk.</desc>
+
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2b3a"/>
+      <stop offset="100%" stop-color="#111a24"/>
+    </linearGradient>
+    <linearGradient id="track" gradientUnits="userSpaceOnUse" x1="150" y1="330" x2="1050" y2="330">
+      <stop offset="0%" stop-color="#e0a458"/>
+      <stop offset="50%" stop-color="#6d84a0"/>
+      <stop offset="100%" stop-color="#d9736c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+
+  <text x="600" y="110" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3" fill="#cdd9e6">WHERE DO YOU SET THE LINE</text>
+
+  <line x1="150" y1="330" x2="1050" y2="330" stroke="url(#track)" stroke-width="10" stroke-linecap="round"/>
+
+  <line x1="150" y1="300" x2="150" y2="360" stroke="#6d84a0" stroke-width="2"/>
+  <line x1="1050" y1="300" x2="1050" y2="360" stroke="#6d84a0" stroke-width="2"/>
+
+  <g>
+    <circle cx="660" cy="330" r="30" fill="#1d2b3a" stroke="#e8eef5" stroke-width="4"/>
+    <line x1="660" y1="245" x2="660" y2="290" stroke="#e8eef5" stroke-width="2.5"/>
+    <rect x="590" y="195" width="140" height="46" rx="8" fill="#26374a" stroke="#e8eef5" stroke-width="2"/>
+    <text x="660" y="224" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1" fill="#e8eef5">THRESHOLD</text>
+  </g>
+
+  <text x="230" y="90" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="1.5" fill="#e0a458">FALSE POSITIVES</text>
+  <text x="230" y="440" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c79a68">more friction</text>
+  <text x="230" y="465" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c79a68">good actors flagged</text>
+  <text x="230" y="490" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c79a68">loud, visible, escalated</text>
+
+  <text x="970" y="90" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="1.5" fill="#d9736c">FALSE NEGATIVES</text>
+  <text x="970" y="440" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c78d89">more risk</text>
+  <text x="970" y="465" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c78d89">risky cases missed</text>
+  <text x="970" y="490" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c78d89">quiet, hidden, discovered later</text>
+
+  <text x="600" y="570" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#8494a6">a number that decides who experiences risk, and who experiences friction</text>
+</svg>
