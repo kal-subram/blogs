@@ -47,7 +47,7 @@ The six pillars (use the exact string as it appears here):
 
 Pick whichever pillar the post's core argument fits best. Add `tags = [...]` for secondary cross-cutting themes if useful (optional).
 
-Post titles should be phrased as questions (e.g. "Why Does Accuracy Fall Short?" rather than "Accuracy Is Not Enough").
+Post titles should NOT be phrased as questions - use a plain statement (e.g. "Accuracy Is Not Enough" rather than "Why Does Accuracy Fall Short?").
 
 ## Tone and style (when you're drafting or editing content yourself)
 
